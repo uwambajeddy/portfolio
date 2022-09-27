@@ -57,13 +57,15 @@
 .portfolio-slider .swiper-slide:hover .descriptions .languages{
   width: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 
 .portfolio-slider .swiper-slide:hover .descriptions .languages .language{
   border-radius: 40px;
-  border: 2px solid #f09819;
+  border: 1px solid #f09819;
   padding: 5px 20px;
   color: #ffad57;
+  font-size: 15px;
   display: flex;
   width: fit-content;
   margin: 0 10px 0 0;
@@ -130,4 +132,17 @@
   padding: 20px;
   box-sizing: border-box;
   clip-path: circle(0% at 100% 100%);
+}
+
+.button ion-icon{
+  position: relative;
+  margin-bottom: -5px;
+}
+
+.redirect-links{
+  margin-top: 35px;
+}
+
+.redirect-links a{
+  margin-right: 20px;
 }

@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import "./Portfolio.css";
 import { EffectCoverflow, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react"
-import Sidebar from "../../img/sidebar.png";
-import reactjs from "../../img/reactjs-small.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Screenshot_1 from "../../img/Screenshot_1.png";
+import Screenshot_2 from "../../img/Screenshot_2.png";
+import Screenshot_3 from "../../img/Screenshot_3.png";
+import Screenshot_4 from "../../img/Screenshot_4.png";
+import Screenshot_5 from "../../img/Screenshot_5.png";
+import Screenshot_6 from "../../img/Screenshot_6.png";
 import { themeContext } from "../../Context";
 
 // Import Swiper styles
@@ -28,25 +29,6 @@ const Portfolio = () => {
       <span>Portfolio</span>
 
       {/* slider */}
-     {/*  <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        className="portfolio-slider"
-      >
-        <SwiperSlide>
-          <img src={Sidebar} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Ecommerce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MusicApp} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HOC} alt="" />
-        </SwiperSlide>
-      </Swiper> */}
        <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -64,9 +46,9 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-        <img className="slide-image" src={Ecommerce}/>        
+        <img className="slide-image" src={Screenshot_1}/>        
             <div class="descriptions">
-                <h1>John Wick 3</h1>
+                <h1>Personal portfolio</h1>
                 <p>
                     After gunning down a member of the High Table -- the shadowy international assassin's guild -- legendary hit man John Wick finds himself stripped of the organization's protective services. Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of New York as he becomes the target of the world's most ruthless killers.
                 </p>
@@ -74,38 +56,52 @@ const Portfolio = () => {
                   <p className="language">Reactjs</p>
                 <p className="language">Nodejs</p>
                 </div>
-                <Link to="contact" smooth={true} spy={true}>
-            <button className="button">Hire Me</button>
-          </Link>
-    </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src={HOC}/>        
-            <div class="descriptions">
-                <h1>John Wick 3</h1>
-                <p>
-                    After gunning down a member of the High Table -- the shadowy international assassin's guild -- legendary hit man John Wick finds himself stripped of the organization's protective services. Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of New York as he becomes the target of the world's most ruthless killers.
-                </p>
-                <button>
-                    <i class="fab fa-youtube"></i>
-                    Play trailer on YouTube
-                </button>
-    </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src={MusicApp}/>        
-            <div class="descriptions">
-                <h1>John Wick 3</h1>
-                <p>
-                    After gunning down a member of the High Table -- the shadowy international assassin's guild -- legendary hit man John Wick finds himself stripped of the organization's protective services. Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of New York as he becomes the target of the world's most ruthless killers.
-                </p>
-                <button>
-                    <i class="fab fa-youtube"></i>
-                    Play trailer on YouTube
-                </button>
-    </div>
-        </SwiperSlide>
+              <div className="redirect-links">
+                <a href="#" className="button">visit <ion-icon className="ion-icons" name="arrow-round-forward"></ion-icon></a>
+                <a href="#" className="button">code <ion-icon className="ion-icons" name="logo-github"></ion-icon></a>
 
+              </div>
+          
+    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img className="slide-image" src={Screenshot_6}/>        
+            <div class="descriptions">
+                <h1>Rise up</h1>
+                <p>
+                    After gunning down a member of the High Table -- the shadowy international assassin's guild -- legendary hit man John Wick finds himself stripped of the organization's protective services. Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of New York as he becomes the target of the world's most ruthless killers.
+                </p>
+                <div className="languages">
+                  <p className="language">Reactjs</p>
+                <p className="language">Nodejs</p>
+                </div>
+              <div className="redirect-links">
+                <a href="#" className="button">visit <ion-icon className="ion-icons" name="arrow-round-forward"></ion-icon></a>
+                <a href="#" className="button">code <ion-icon className="ion-icons" name="logo-github"></ion-icon></a>
+
+              </div>
+          
+    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img className="slide-image" src={Screenshot_2}/>        
+            <div class="descriptions">
+                <h1>Sillion africa</h1>
+                <p>
+                    After gunning down a member of the High Table -- the shadowy international assassin's guild -- legendary hit man John Wick finds himself stripped of the organization's protective services. Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of New York as he becomes the target of the world's most ruthless killers.
+                </p>
+                <div className="languages">
+                  <p className="language">Reactjs</p>
+                <p className="language">Nodejs</p>
+                </div>
+              <div className="redirect-links">
+                <a href="#" className="button">visit <ion-icon className="ion-icons" name="arrow-round-forward"></ion-icon></a>
+                <a href="#" className="button">code <ion-icon className="ion-icons" name="logo-github"></ion-icon></a>
+
+              </div>
+          
+    </div>
+        </SwiperSlide>
     
       </Swiper>
     </div>
